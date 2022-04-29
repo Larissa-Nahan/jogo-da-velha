@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body class="body">
+    <div class="left dark-blue">
+      <div class="container">
+        <section class="players">
+          <div class="input-player-1">
+            <input type="text" value="Jogador 1" />
+          </div>
+          <div class="input-player-2">
+            <input type="text" value="Jogador 2" />
+            <div class="toggle">
+              <div class="ball"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="play-type">
+          <h3 class="type">Tipo de Partida</h3>
+          <div class="best-of">
+            <span class="of-three">Melhor de 3</span>
+            <div class="toggle">
+              <div class="ball"></div>
+            </div>
+            <span class="of-five">Melhor de 5</span>
+          </div>
+        </section>
+
+        <button class="play button">Jogar</button>
+
+        <section class="match-history">
+          <h3 class="history">Histórico de Partidas</h3>
+          <div class="matches">
+            <div class="match">
+              <div class="scenery">
+                <span class="scenery-text">Vencedor</span>
+                <span class="scenery-player">Primeiro Quadrado</span>
+              </div>
+              <span class="scene-text">Cenário</span>
+              <span class="scene">
+                <div class="mini-box mini-box-1">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-2">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-3">
+                  <span class="mini-x">X</span>
+                </div>
+                <div class="mini-box mini-box-4">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-5">
+                  <span class="mini-x">X</span>
+                </div>
+                <div class="mini-box mini-box-6">
+                  <span class="mini-x">X</span>
+                </div>
+                <div class="mini-box mini-box-7"></div>
+                <div class="mini-box mini-box-8">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-9">
+                  <span class="mini-x">X</span>
+                </div>
+              </span>
+            </div>
+            <div class="match">
+              <div class="scenery">
+                <span class="scenery-text">Vencedor</span>
+                <span class="scenery-player">Primeiro Quadrado</span>
+              </div>
+              <span class="scene-text">Cenário</span>
+              <span class="scene">
+                <div class="mini-box mini-box-1">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-2">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-3">
+                  <span class="mini-x">X</span>
+                </div>
+                <div class="mini-box mini-box-4">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-5">
+                  <span class="mini-x">X</span>
+                </div>
+                <div class="mini-box mini-box-6">
+                  <span class="mini-x">X</span>
+                </div>
+                <div class="mini-box mini-box-7"></div>
+                <div class="mini-box mini-box-8">
+                  <span class="mini-o">O</span>
+                </div>
+                <div class="mini-box mini-box-9">
+                  <span class="mini-x">X</span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <button class="restart button">Reiniciar</button>
+      </div>
+    </div>
+
+    <div class="center light-blue">
+      <div class="container">
+        <section class="scoreboard-container">
+          <strong class="scoreboard-title">Placar</strong>
+          <div class="scoreboard">
+            <strong class="score-player-1">00</strong>
+            <span class="winner">Vencedor</span>
+            <strong class="score-player-2">00</strong>
+          </div>
+        </section>
+
+        <section class="play-container">
+          <div class="box box-1">
+            <span class="big-x">X</span>
+          </div>
+          <div class="box box-2">
+            <span class="big-o">O</span>
+          </div>
+          <div class="box box-3"></div>
+          <div class="box box-4"></div>
+          <div class="box box-5"></div>
+          <div class="box box-6"></div>
+          <div class="box box-7"></div>
+          <div class="box box-8"></div>
+          <div class="box box-9"></div>
+        </section>
+      </div>
+    </div>
+    
+    <div class="right dark-blue">
+      <div class="container">
+         <section class="move-history">
+          <h3 class="history">Histórico de Jogadas</h3>
+          <div class="moves">
+            <div class="move">
+              <span class="o">O</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 1</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">X</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 2</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">O</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 1</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">X</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 2</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">O</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 1</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">X</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 2</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">O</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 1</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+            <div class="move">
+              <span class="o">X</span>
+              <div class="move-box">
+                <span class="move-player">Jogador 2</span>
+                <span class="move-place">Primeiro Quadrado</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
