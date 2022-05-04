@@ -8,204 +8,70 @@
     <title>Jogo da Velha</title>
   </head>
   <body class="body">
-    <div class="dark-blue">
-      <div class="container">
-        <section class="players">
-          <div class="players__container-player">
-            <input type="text" value="Jogador 1" class="players__container-player__input player-1"/>
-          </div>
-          <div class="players__container-player">
-            <input type="text" value="Jogador 2" class="players__container-player__input player-2"/>
-            <div class="toggle">
-              <div class="toggle__ball"></div>
+    <section class="container container-left">
+      <div class="box-center box-center-left">
+        <div class="player-box">
+          <input
+            type="text"
+            class="player-field player-field-1"
+            placeholder="Jogador 1"
+          />
+          <div class="player-field-wrapper">
+            <input
+              class="player-field player-field-2"
+              placeholder="Jogador 2"
+            />
+            <div class="switcher">
+              <div class="switcher-ball"></div>
             </div>
           </div>
-        </section>
-
-        <section class="play-type">
-          <h3 class="type">Tipo de Partida</h3>
-          <div class="best-of">
-            <span class="best-of__three">Melhor de 3</span>
-            <div class="toggle">
-              <div class="toggle__ball"></div>
-            </div>
-            <span class="best-of__five">Melhor de 5</span>
+        </div>
+        <h2 class="title title--green title--match">Tipo de Partida</h2>
+        <div class="best-of">
+          <span class="best-of--text">Melhor de 3</span>
+          <div class="switcher">
+            <div class="switcher-ball"></div>
           </div>
-        </section>
-
+          <span class="best-of--text">Melhor de 5</span>
+        </div>
         <button class="button button__play">Jogar</button>
-
-        <section class="match-history">
-          <h3 class="history">Histórico de Partidas</h3>
-          <div class="matches">
-            <div class="matches__match">
-              <div class="scenery">
-                <span class="scenery__text">Vencedor</span>
-                <span class="scenery__player">Primeiro Quadrado</span>
-              </div>
-              <span class="scene-text">Cenário</span>
-              <span class="scene">
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-                <div class="box box__small"></div>
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-              </span>
-            </div>
-            <div class="matches__match">
-              <div class="scenery">
-                <span class="scenery__text">Vencedor</span>
-                <span class="scenery__player">Primeiro Quadrado</span>
-              </div>
-              <span class="scene-text">Cenário</span>
-              <span class="scene">
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-                <div class="box box__small"></div>
-                <div class="box box__small">
-                  <span class="element element__small">O</span>
-                </div>
-                <div class="box box__small">
-                  <span class="element element__small">X</span>
-                </div>
-              </span>
-            </div>
-          </div>
-        </section>
-
+        <div class="match-history">
+          <h2 class="title title--match-history">Histórico de Partidas</h2>
+          <ul class="match-history-list"></ul>
+        </div>
         <button class="button button__restart">Reiniciar</button>
       </div>
-    </div>
+    </section>
 
-    <div class="light-blue">
-      <div class="container">
-        <section class="scoreboard-container">
-          <strong class="scoreboard-title">Placar</strong>
-          <div class="score">
-            <strong class="score__player player-1">00</strong>
-            <span class="winner">Vencedor</span>
-            <strong class="score__player player-2">00</strong>
-          </div>
-        </section>
+    <section class="container container-center">
+      <div class="scoreboard-box">
+        <h1 class="title title--blue-big title-scoreboard">Placar</h1>
+        <div class="score-wrapper">
+          <strong class="score score-1">00</strong>
+          <span class="winner-text">Vencedor</span>
+          <strong class="score score-2">00</strong>
+        </div>
+      </div>
 
-        <section class="game-container">
-          <div class="box box__big">
-            <span class="element element__big">X</span>
-          </div>
-          <div class="box box__big">
-            <span class="element element__big">O</span>
-          </div>
-          <div class="box box__big"></div>
-          <div class="box box__big"></div>
-          <div class="box box__big"></div>
-          <div class="box box__big"></div>
-          <div class="box box__big"></div>
-          <div class="box box__big"></div>
-          <div class="box box__big"></div>
-        </section>
+      <div class="board">
+        <span class="board-item board-item-0"></span>
+        <span class="board-item board-item-1"></span>
+        <span class="board-item board-item-2"></span>
+        <span class="board-item board-item-3"></span>
+        <span class="board-item board-item-4"></span>
+        <span class="board-item board-item-5"></span>
+        <span class="board-item board-item-6"></span>
+        <span class="board-item board-item-7"></span>
+        <span class="board-item board-item-8"></span>
       </div>
-    </div>
-    
-    <div class="dark-blue">
-      <div class="container">
-         <section class="move-history">
-          <h3 class="history">Histórico de Jogadas</h3>
-          <div class="moves">
-            <div class="moves__move">
-              <span class="element element__normal">O</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 1</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">X</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 2</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">O</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 1</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">X</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 2</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">O</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 1</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">X</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 2</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">O</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 1</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-            <div class="moves__move">
-              <span class="element element__normal">X</span>
-              <div class="moves__move-box">
-                <span class="moves__move-box__player">Jogador 2</span>
-                <span class="moves__move-box__place">Primeiro Quadrado</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    <script src="./script.js"></script>
+    </section>
+
+    <section class="container container-right">
+      <section class="move-history">
+        <h2 class="title history-move-title">Histórico de Jogadas</h2>
+        <ul class="history-move-list"></ul>
+      </section>
+    </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
